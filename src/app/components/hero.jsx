@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import carFull from "../../assets/car-full.png";
 import location from "../../assets/location.png";
-import Calendar from "../../assets/calendar.png";
+import Calendar from "../../assets/Calendar.png";
 import arrowRight from "../../assets/arrow-right.png";
 
 import Link from "next/link";
