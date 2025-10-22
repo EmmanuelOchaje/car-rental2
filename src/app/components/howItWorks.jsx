@@ -34,9 +34,9 @@ const HIW = (props) => {
         online
       </p>
 
-      <div className="relative flex justify-between items-start mt-8">
-        <div className="py-5 relative max-w- w-[950px] mx-auto my-6 h-fit">
-          <div className="absolute flex mt-8 mr-[60px] flex-col">
+      <div className="relative flex justify-between items-start mt-1 lg:mt-8">
+        <div className="py-5 relative max-w- w-[950px] mx-auto flex lg:block flex-col items-center gap-5 my-6 h-fit">
+          <div className="lg:absolute flex mt-8 lg:mr-[60px] flex-col">
             <div className="flex flex-col gap-3">
               {steps.map((step, i) => (
                 <div
@@ -45,11 +45,13 @@ const HIW = (props) => {
                 >
                   <div className="bg-[#F5F5F5] py-4 px-2 rounded-lg flex justify-center items-center">
                     <Link href="">
-                      <Image
-                        src={step.icon}
-                        alt={step.title}
-                        className="w-4 h-4"
-                      />
+                      <div className="w-[20px]">
+                        <Image
+                          src={step.icon}
+                          alt={step.title}
+                          className="w-4 h-4"
+                        />
+                      </div>
                     </Link>
                   </div>
                   <div className="max-w-sm flex flex-col justify-between">

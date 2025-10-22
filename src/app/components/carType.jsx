@@ -65,14 +65,19 @@ const type = [
 
 const CarType = () => {
   return (
-    <div className="w-full font-figtree pb-6 px-16 bg-white">
+    <div className="w-full font-figtree pb-6 px-8 md:px-16 bg-white">
       <div className="my-6">
-        <Link href={""} className="float-right flex items-center gap-2">
+        <Link
+          href={""}
+          className="float-right hidden md:flex items-center gap-2"
+        >
           View All <Image src={arrowBlack} className="w-3 h-3" alt="" />
         </Link>
-        <h2 className="mt-10 font-semibold ">Rent By Body Type</h2>
+        <h2 className="mt-10 text-center md:text-left font-semibold ">
+          Rent By Body Type
+        </h2>
       </div>
-      <div className="flex flex-row flex-wrap gap-12">
+      <div className="flex flex-row flex-wrap justify-center lg:justify-normal gap-6 md:gap-12">
         {type.map((item, ind) => (
           <div key={ind} className="w-[150px] bg-gray-50 rounded-lg">
             <div className="w-20 mx-auto">

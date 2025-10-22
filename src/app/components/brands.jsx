@@ -67,14 +67,19 @@ const brands = [
 
 const Brands = () => {
   return (
-    <div className="w-full font-figtree py-16 px-16 bg-white">
+    <div className="w-full font-figtree py-8 px-8 md:py-16 md:px-16 bg-white">
       <div className="my-6">
-        <Link href={""} className="float-right flex items-center gap-2">
+        <Link
+          href={""}
+          className="float-right hidden md:flex flex-wrap items-center gap-2"
+        >
           View All <Image src={arrowBlack} className="w-3 h-3" alt="" />
         </Link>
-        <h2 className="mt-10 font-semibold ">Rent By Brands</h2>
+        <h2 className="mt-10 font-semibold text-center md:text-left">
+          Rent By Brands
+        </h2>
       </div>
-      <div className="flex flex-row flex-wrap gap-12">
+      <div className="flex flex-row justify-center lg:justify-normal flex-wrap gap-6 md:gap-12">
         {brands.map((item, ind) => (
           <div key={ind} className="w-[150px] bg-gray-50 rounded-lg">
             <div className="w-20 mx-auto">

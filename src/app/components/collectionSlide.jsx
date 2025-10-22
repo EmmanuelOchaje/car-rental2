@@ -52,12 +52,14 @@ const cars = [
 
 const Slide = () => {
   return (
-    <div className="grid grid-cols-3 gap-4 px-20">
+    <div className="justify-center flex flex-wrap gap-4">
       {" "}
       {/* Added Tailwind for layout */}
       {cars.map((car) => (
         <div key={car.id} className="p-1 rounded-[18px] border">
-          <Image src={car.src} alt={car.name} className="w-full" />
+          <div className="max-w-[300px] max-h-[200px]">
+            <Image src={car.src} alt={car.name} className="w-full" />
+          </div>
           <p className="my-3 text-md font-normal mx-4">{car.name}</p>
           <h3 className="text-sm my-2 text-gray-500 font-light mx-4">
             <span className="font-bold text-2xl text-black">{car.price}</span>

@@ -13,20 +13,20 @@ const Collection = () => {
         selected to provide our customers with the ultimate driving experience.
       </p>
 
-      <div className="flex w-fit mx-auto gap-4 my-3">
-        <button className="bg-black text-white text-sm rounded-full p-3">
+      <div className="flex flex-wrap w-fit mx-auto md:gap-4 gap-1 my-3">
+        <button className="bg-black text-white text-sm rounded-full p-2 md:p-3">
           Popular Car
         </button>
-        <button className="bg-white text-sm rounded-full p-3">
+        <button className="bg-white text-sm rounded-full p-2 md:p-3">
           Luxury Car
         </button>
-        <button className="bg-white text-sm rounded-full p-3">
+        <button className="bg-white text-sm rounded-full p-2 md:p-3">
           Vinteage Car
         </button>
-        <button className="bg-white text-sm rounded-full p-3">
+        <button className="bg-white text-sm rounded-full p-2 md:p-3">
           Family Car
         </button>
-        <button className="bg-white text-sm rounded-full p-3">
+        <button className="bg-white text-sm rounded-full p-2 md:p-3">
           Off-Road Car
         </button>
       </div>
