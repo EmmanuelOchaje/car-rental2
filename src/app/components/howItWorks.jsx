@@ -27,8 +27,10 @@ const steps = [
 const HIW = (props) => {
   return (
     <div className="px-16 font-figtree relative z-10 my-10">
-      <h2 className="text-3xl font-bold text-center">How it works</h2>
-      <p className="text-center max-w-xl text-md font-normal my-2 mx-auto text-wrap">
+      <h2 className="text-2xl md:text-3xl font-bold text-center">
+        How it works
+      </h2>
+      <p className="text-center max-w-xl md:text-md font-normal my-2 mx-auto text-wrap">
         Renting a luxury car has never been easier. Our streamlined process
         makes it simple for you to book and confirm your vehicle of choice
         online
@@ -55,10 +57,10 @@ const HIW = (props) => {
                     </Link>
                   </div>
                   <div className="max-w-sm flex flex-col justify-between">
-                    <h2 className="font-semibold mb-3 text-[16px]">
+                    <h2 className="font-semibold mb-1 md:mb-3 text-[16px]">
                       {step.title}
                     </h2>
-                    <p className="text-left text-sm">{step.desc}</p>
+                    <p className="text-left text-xs md:text-sm">{step.desc}</p>
                   </div>
                 </div>
               ))}

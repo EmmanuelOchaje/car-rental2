@@ -60,31 +60,45 @@ const Slide = () => {
           <div className="max-w-[300px] max-h-[200px]">
             <Image src={car.src} alt={car.name} className="w-full" />
           </div>
-          <p className="my-3 text-md font-normal mx-4">{car.name}</p>
+          <p className="my-3 text-sm md:text-md font-normal mx-4">{car.name}</p>
           <h3 className="text-sm my-2 text-gray-500 font-light mx-4">
-            <span className="font-bold text-2xl text-black">{car.price}</span>
+            <span className="font-bold text-lg md:text-2xl text-black">
+              {car.price}
+            </span>
             /day
           </h3>
-          <div className="flex w-fit mx-auto gap-4 bg-gray-200 rounded-lg my-4">
+          <div className="flex w-fit mx-auto gap-4 bg-gray-200 rounded-lg md:my-4 mb-0">
             <div className="flex flex-col items-center p-2 px-4 rounded-lg">
-              <Image src={speed} alt="Speed" width={20} height={20} />
+              <Image
+                src={speed}
+                alt="Speed"
+                className="w-3 h-3 md:w-6 md:h-6"
+              />
               <p className="text-[10px]">4,000</p>
             </div>
             <div className="flex flex-col items-center p-2 px-4 rounded-lg">
-              <Image src={auto} alt="Transmission" width={20} height={20} />
+              <Image
+                src={auto}
+                alt="Transmission"
+                className="w-3 h-3 md:w-6 md:h-6"
+              />
               <p className="text-[10px]">Auto</p>
             </div>
             <div className="flex flex-col items-center p-2 px-4 rounded-lg">
-              <Image src={passengers} alt="Passengers" width={20} height={20} />
-              <p className="text-[10px]">4 Person</p>
+              <Image
+                src={passengers}
+                alt="Passengers"
+                className="w-3 h-3 md:w-6 md:h-6"
+              />
+              <p className="text-[10px]">4Person</p>
             </div>
             <div className="flex flex-col items-center p-2 px-4 rounded-lg">
-              <Image src={gas} alt="Gas" width={20} height={20} />
+              <Image src={gas} alt="Gas" className="w-3 h-3 md:w-6 md:h-6" />
               <p className="text-[10px]">Electric</p>
             </div>
           </div>
           <div className="flex justify-center">
-            <button className="px-14 mt-3 w-fit p-2 rounded-full bg-transparent border-[2px] border-black text-lg">
+            <button className="lg:px-14 px-6 mt-3 w-fit p-2 text-xs rounded-full bg-transparent border-[2px] border-black md:text-lg">
               Rent now
             </button>
           </div>

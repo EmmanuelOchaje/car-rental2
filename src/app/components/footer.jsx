@@ -12,7 +12,7 @@ const Footer = () => {
           <h2 className="font-bold text-center md:text-left text-2xl">
             Download our mobile app⚡
           </h2>
-          <p className="text-sm max-w-md my-7 text-center md:text-left leading-6 text-balance font-light">
+          <p className="text-xs md:text-sm max-w-md my-7 text-center md:text-left leading-6 text-balance font-light">
             Get exclusive access to car rentals with our mobile app. Download
             now and experience convenience on the go.
           </p>
@@ -28,17 +28,20 @@ const Footer = () => {
       </div>
       {/* <hr className="border-[.1px] my -6" /> */}
 
-      <div className="flex flex-wrap flex-col gap-3 md:gap-0 items-center md:justify-around border-t-[.1px] border-[#FFFFFF1A] p-6 px-10">
+      <div className="flex flex-wrap flex-col md:flex-row gap-3 md:gap-0 items-center md:justify-around border-t-[.1px] border-[#FFFFFF1A] p-6 px-10">
         <div className="bg-black max-w-[200px]">
           <Image src={logo} alt="" />
         </div>
-        <div name={"links"} className="flex font-light text-sm gap-10">
+        <div
+          name={"links"}
+          className="flex font-light text-xs md:text-sm gap-10"
+        >
           <button>Rent</button>
           <button>Share</button>
           <button>About us</button>
           <button>Contact</button>
         </div>
-        <div name={"socials"} className="flex gap-6">
+        <div name={"socials"} className="text-xs md:text-sm flex gap-6">
           <button>Instagram</button>
           <button>Tiwtter</button>
           <button>Youtube</button>

@@ -23,9 +23,13 @@ const Benefits = () => {
         {/* Quality Choice */}
         <div className="flex-1 flex flex-col items-center gap-3">
           <div className="bg-white/10 rounded-full">
-            <Image src={star} alt="Quality Choice" className="w-14 h-14" />
+            <Image
+              src={star}
+              alt="Quality Choice"
+              className="md:w-14 w-10 h-10 md:h-14"
+            />
           </div>
-          <h4 className="font-semibold text-md">Quality Choice</h4>
+          <h4 className="font-semibold text-sm md:text-md">Quality Choice</h4>
           <p className="text-xs text-white/70 max-w-xs">
             We offer a wide range of high-quality vehicles to choose from,
             including luxury cars, SUVs, vans, and more.
@@ -38,10 +42,12 @@ const Benefits = () => {
             <Image
               src={partner}
               alt="Affordable Prices"
-              className="w-14 h-14"
+              className="md:w-14 w-10 h-10 md:h-14"
             />
           </div>
-          <h4 className="font-semibold text-md">Affordable Prices</h4>
+          <h4 className="font-semibold text-sm md:text-md">
+            Affordable Prices
+          </h4>
           <p className="text-xs text-white/70 max-w-xs">
             Our rental rates are highly competitive and affordable, allowing our
             customers to enjoy their trips without breaking the bank.
@@ -54,10 +60,12 @@ const Benefits = () => {
             <Image
               src={verified}
               alt="Convenient Online Booking"
-              className="w-14 h-14"
+              className="md:w-14 w-10 h-10 md:h-14"
             />
           </div>
-          <h4 className="font-semibold text-md">Convenient Online Booking</h4>
+          <h4 className="font-semibold text-sm md:text-md">
+            Convenient Online Booking
+          </h4>
           <p className="text-xs text-white/70 max-w-xs">
             With our easy-to-use online booking system, customers can quickly
             and conveniently reserve their rental car from anywhere, anytime.

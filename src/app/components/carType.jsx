@@ -79,9 +79,16 @@ const CarType = () => {
       </div>
       <div className="flex flex-row flex-wrap justify-center lg:justify-normal gap-6 md:gap-12">
         {type.map((item, ind) => (
-          <div key={ind} className="w-[150px] bg-gray-50 rounded-lg">
-            <div className="w-20 mx-auto">
-              <Image src={item.type} alt="" className="w-16 mx-auto my-6" />
+          <div
+            key={ind}
+            className="w-[80px] py-2 md:py-0 md:w-[150px] bg-gray-50 rounded-lg"
+          >
+            <div className="w-10 md:w-20 mx-auto">
+              <Image
+                src={item.type}
+                alt=""
+                className="w-10 md:w-16 mx-auto my-6"
+              />
             </div>
             <h4 className="text-center text-[13px]">{item.name}</h4>
           </div>
